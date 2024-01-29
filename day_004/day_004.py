@@ -30,7 +30,7 @@ scissors = '''
 '''
 
 # Welcome Message
-print("Welcome to Rock, Paper, Scissors: Type (1) for rock, (2) for Paper and (3) for Scissors.")
+print("Welcome to Rock, Paper, Scissors: Type (0) for rock, (1) for Paper and (2) for Scissors.")
 
 # Get user input and computer input
 input1 = int(input())
@@ -40,10 +40,8 @@ options = [rock, paper, scissors]
 user_choice, computer_choice = options[input1], options[input2]
 
 # Print the game output
-print("User picks:")
-print(user_choice)
-print("Computer picks:")
-print(computer_choice)
+print(f"User picks: {options[input1]}")
+print(f"Computer picks: {options[input2]}")
 
 if user_choice == computer_choice:
     print("Its a Draw!")

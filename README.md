@@ -10,7 +10,6 @@ This repo houses 100 days of python code which looks at a range of fairly simple
 - [Day_005:](day_005) - Password Generator - Loops
 - [Day_006](day_006) - Escaping the Maze - Functions
 - [Day_007](day_007) - Hangman - Loops and if statements
-- [Day_008](day_008) -
+- [Day_008](day_008) - Caesar Cipher - Function parameters 
 - [Day_009](day_009) - 
 - [Day_010](day_010) -
-- 

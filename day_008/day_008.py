@@ -6,27 +6,19 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-def encrypt(text, shift):
+def ceaser(text, shift, direction):
     new = ""
+    if direction == "encode":
+        shift = shift
+    elif direction == "decode":
+        shift = -shift
+
     for letter in text:
         index = alphabet.index(letter) + shift
         if index > 25:
             index -= 26
         new += alphabet[index]
-    print(f"The encoded text is {new}")
 
+    print(f"New message is {new}")
 
-def decrypt(text, shift):
-    new = ""
-    for letter in text:
-        index = (alphabet.index(letter)) - shift
-        new += alphabet[index]
-    print(f"The decoded text is {new}")
-
-
-if direction == "encode":
-    encrypt(text, shift)
-elif direction == "decode":
-    decrypt(text, shift)
-else:
-    print("You did not select a valid option.")
+ceaser(text, shift, direction)
